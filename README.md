@@ -2,7 +2,7 @@
 
 This repository is for creating a new profile in Powder platform.
 
-Free5gc docker - CN (node 1)
+Free5gc docker - CN (node 1) - single UPF
 OAI RAN - X310 (node 2)
 OAI UE - X310 (node 3)
 
@@ -47,4 +47,4 @@ You should now be able to generate traffic in either direction:
 ping -I oaitun_ue1 192.168.70.135
 
 # from CN traffic generation service to UE (in session on cn node)
-sudo docker exec -it oai-ext-dn ping <UE IP address>
+# sudo docker exec -it oai-ext-dn ping <UE IP address>
