@@ -11,9 +11,7 @@ cd /var/tmp/free5gc-compose/
 
 sudo docker-compose up -d
 
-ifconfig 
-
-To see the IP address of all dockers: sudo docker ps -q | xargs -n 1 sudo docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} {{ .Name }}' | sed 's/ \// /'
+ifconfig
 
 sudo docker exec -it amf sh
 
