@@ -49,7 +49,6 @@ sudo route add -net 192.168.70.0/24 dev oaitun_ue1
 ```
 ifconfig oaitun_ue1
 ```
-
 You should now be able to generate traffic in either direction:
 
 # from UE to CN traffic gen node (in session on ue node)
@@ -58,4 +57,6 @@ ping -I oaitun_ue1 192.168.70.135
 ```
 
 # from CN traffic generation service to UE (in session on cn node)
-# sudo docker exec -it oai-ext-dn ping <UE IP address>
+```
+sudo docker exec -it oai-ext-dn ping <UE IP address>
+```
